@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisasterGuardian.ai - AI-Powered Disaster Management Platform</title>
+    <meta name="description" content="Plataforma de inteligência artificial para gestão e prevenção de desastres naturais em tempo real">
+    <meta name="keywords" content="disaster management, AI prediction, early warning, emergency response, natural disasters">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="DisasterGuardian.ai - Save Lives with AI-Powered Disaster Intelligence">
+    <meta property="og:description" content="Transform disaster response with real-time AI prediction and monitoring">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/og-image.jpg">
+    
+    <!-- Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt logo-icon"></i>
+                <span class="logo-text">
+                    <span class="logo-part-1">Disaster</span>
+                    <span class="logo-part-2">Guardian</span>
+                    <span class="logo-part-3">.ai</span>
+                </span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="#dashboard" class="nav-item active">
+                    <i class="fas fa-chart-dashboard"></i>
+                    Dashboard
+                </a>
+                <a href="#map" class="nav-item">
+                    <i class="fas fa-map"></i>
+                    Live Map
+                </a>
+                <a href="#alerts" class="nav-item">
+                    <i class="fas fa-bell"></i>
+                    Alerts
+                </a>
+                <a href="#resources" class="nav-item">
+                    <i class="fas fa-book"></i>
+                    Resources
+                </a>
+                <a href="#command" class="nav-item">
+                    <i class="fas fa-satellite-dish"></i>
+                    Command Center
+                </a>
+            </div>
+
+            <!-- Emergency Button & Mobile Toggle -->
+            <div class="nav-actions">
+                <button class="btn-emergency nav-emergency">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span class="emergency-text">Emergency</span>
+                </button>
+                
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <!-- Status Badge -->
+            <div class="status-badge">
+                <i class="fas fa-activity"></i>
+                Sistema Operacional - Monitoramento Ativo
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="hero-title">
+                <span class="title-line">Inteligência Artificial para</span>
+                <span class="title-line highlight">Gestão de Desastres</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="hero-subtitle">
+                Monitoramento em tempo real, previsão precisa e resposta coordenada para salvar vidas 
+                e proteger comunidades em situações de emergência.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-actions">
+                <button class="btn btn-emergency btn-xl">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Estou em Perigo
+                </button>
+                <button class="btn btn-primary btn-xl">
+                    <i class="fas fa-satellite"></i>
+                    Acessar Dashboard
+                </button>
+            </div>
+
+            <!-- Global Stats -->
+            <div class="global-stats">
+                <div class="stat-card">
+                    <div class="stat-value emergency">12</div>
+                    <div class="stat-label">Eventos Ativos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value alert">34</div>
+                    <div class="stat-label">Alertas Hoje</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value safe">2.4M</div>
+                    <div class="stat-label">Pessoas Protegidas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value primary">94%</div>
+                    <div class="stat-label">Precisão IA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Dashboard -->
+    <section class="dashboard-section" id="dashboard">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-activity section-icon"></i>
+                <h2 class="section-title">Status do Sistema</h2>
+            </div>
+
+            <div class="stats-grid">
+                <!-- Stats Card 1 -->
+                <div class="stats-card attention">
+                    <div class="stats-content">
+                        <div class="stats-main">
+                            <div class="stats-value">15,234</div>
+                            <div class="stats-subtitle">
+                                <i class="fas fa-trend-up emergency"></i>
+                                Últimas 24h
+                            </div>
+                        </div>
+                        <div class="stats-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="stats-title">Pessoas Evacuadas</div>
+                </div>
+
+                <!-- Stats Card 2 -->
+                <div class="stats-card safe">
+                    <div class="stats-content">
+                        <div class="stats-main">
+                            <div class="stats-value">847</div>
+                            <div class="stats-subtitle">
+                                <i class="fas fa-minus muted"></i>
+                                Regiões ativas
+                            </div>
+                        </div>
+                        <div class="stats-icon">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                    </div>
+                    <div class="stats-title">Áreas Monitoradas</div>
+                </div>
+
+                <!-- Stats Card 3 -->
+                <div class="stats-card safe">
+                    <div class="stats-content">
+                        <div class="stats-main">
+                            <div class="stats-value">12,489</div>
+                            <div class="stats-subtitle">
+                                <i class="fas fa-trend-down safe"></i>
+                                98.5% operacional
+                            </div>
+                        </div>
+                        <div class="stats-icon">
+                            <i class="fas fa-satellite"></i>
+                        </div>
+                    </div>
+                    <div class="stats-title">Sensores Ativos</div>
+                </div>
+
+                <!-- Stats Card 4 -->
+                <div class="stats-card safe">
+                    <div class="stats-content">
+                        <div class="stats-main">
+                            <div class="stats-value">3x</div>
+                            <div class="stats-subtitle">
+                                <i class="fas fa-trend-up safe"></i>
+                                Mais rápido que antes
+                            </div>
+                        </div>
+                        <div class="stats-icon">
+                            <i class="fas fa-trending-up"></i>
+                        </div>
+                    </div>
+                    <div class="stats-title">Alertas Precoces</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Active Alerts Section -->
+    <section class="alerts-section" id="alerts">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-exclamation-triangle alert section-icon"></i>
+                <h2 class="section-title">Alertas Ativos</h2>
+            </div>
+
+            <div class="alerts-grid">
+                <!-- Emergency Alert -->
+                <div class="alert-card emergency">
+                    <div class="alert-header">
+                        <i class="fas fa-exclamation-triangle alert-icon"></i>
+                        <h3 class="alert-title">Enchente Iminente</h3>
+                        <span class="alert-badge">EMERGÊNCIA</span>
+                    </div>
+                    <div class="alert-content">
+                        <p class="alert-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Rio Jacuí - Porto Alegre/RS
+                        </p>
+                        <p class="alert-info">
+                            <i class="fas fa-clock"></i>
+                            Esperada em: 2-3 horas
+                        </p>
+                        <p class="alert-info">
+                            <i class="fas fa-ruler"></i>
+                            Nível previsto: 4.2m
+                        </p>
+                    </div>
+                    <div class="alert-actions">
+                        <button class="btn btn-emergency">
+                            Ver Rotas de Fuga
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Alert Level -->
+                <div class="alert-card alert">
+                    <div class="alert-header">
+                        <i class="fas fa-exclamation-circle alert-icon"></i>
+                        <h3 class="alert-title">Chuva Intensa</h3>
+                        <span class="alert-badge">ALERTA</span>
+                    </div>
+                    <div class="alert-content">
+                        <p class="alert-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            São Paulo/SP - Zona Sul
+                        </p>
+                        <p class="alert-info">
+                            <i class="fas fa-clock"></i>
+                            Próximas 6 horas
+                        </p>
+                        <p class="alert-info">
+                            <i class="fas fa-ruler"></i>
+                            Acumulado: 80-120mm
+                        </p>
+                    </div>
+                    <div class="alert-actions">
+                        <button class="btn btn-alert">
+                            Ver Recomendações
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Attention Level -->
+                <div class="alert-card attention">
+                    <div class="alert-header">
+                        <i class="fas fa-info-circle alert-icon"></i>
+                        <h3 class="alert-title">Monitoramento Ativo</h3>
+                        <span class="alert-badge">ATENÇÃO</span>
+                    </div>
+                    <div class="alert-content">
+                        <p class="alert-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Petrópolis/RJ
+                        </p>
+                        <p class="alert-info">
+                            <i class="fas fa-clock"></i>
+                            Sob observação
+                        </p>
+                        <p class="alert-info">
+                            <i class="fas fa-ruler"></i>
+                            Nível do rio: 65% capacidade
+                        </p>
+                    </div>
+                    <div class="alert-actions">
+                        <button class="btn btn-attention">
+                            Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="resources">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Recursos Inteligentes</h2>
+                <p class="section-subtitle">
+                    Tecnologia de ponta para prevenção e resposta a desastres naturais
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon primary">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="feature-title">Previsão com IA</h3>
+                    <p class="feature-description">
+                        Modelos de machine learning com 94% de precisão para prever desastres 
+                        naturais com até 6 horas de antecedência.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon safe">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3 class="feature-title">Monitoramento em Tempo Real</h3>
+                    <p class="feature-description">
+                        Integração com satélites, sensores terrestres e redes sociais para 
+                        detecção imediata de eventos emergenciais.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon alert">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Resposta Coordenada</h3>
+                    <p class="feature-description">
+                        Centro de comando virtual e alocação inteligente de recursos para 
+                        otimizar operações de salvamento e socorro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shield-alt logo-icon"></i>
+                    <span class="logo-text">
+                        <span class="logo-part-1">Disaster</span>
+                        <span class="logo-part-2">Guardian</span>
+                        <span class="logo-part-3">.ai</span>
+                    </span>
+                </div>
+                <p class="footer-copyright">
+                    Salvando vidas através da inteligência artificial © 2025
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
